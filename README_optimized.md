@@ -9,9 +9,9 @@ mim install "mmcv>=2.0.1"
 mim install "mmdet>=3.1.0"
 ```
 
-A questo punto clonare il repository se non lo si e installare MMPose da sorgente:
+A questo punto clonare il repository (SOLO SE NON LO SI HA GIà FATTO) e installare MMPose da sorgente:
 ```bash
-git clone https://github.com/open-mmlab/mmpose.git
+git clone https://github.com/jacopogiuliani/mmpose.git
 cd mmpose
 pip install -r requirements.txt
 pip install -v -e .
@@ -39,3 +39,4 @@ Altri parametri utili che puoi usare con lo script di demo live:
 * `--pred-out-dir`: cartella in cui salvare un file json contenente le predizioni per ogni frame. Queste saranno le coordinate 3D dei keypoints in metri, relative al centro del bacino (joint di indice 0).
 * `--vis-out-dir`: cartella in cui verrà salvata l'immagine di risultato o il video di risultato in caso di input video o webcam.
 
+Premere `ESC` per interrompere la demo e salvare i risultati.
